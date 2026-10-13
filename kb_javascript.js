@@ -246,4 +246,79 @@ document.addEventListener("DOMContentLoaded", function () {
         });
 
 });
+document.addEventListener("click", function (event) {
 
+    const helpful = event.target.closest("#helpfulBtn");
+    const unhelpful = event.target.closest("#unhelpfulBtn");
+
+    if (helpful) {
+        helpful.classList.add("kb-vote-selected");
+        helpful.classList.add("kb-vote-helpful");
+
+        const other = document.querySelector("#unhelpfulBtn");
+
+        if (other) {
+            other.classList.add("kb-vote-not-selected");
+        }
+    }
+
+    if (unhelpful) {
+        unhelpful.classList.add("kb-vote-selected");
+        unhelpful.classList.add("kb-vote-unhelpful");
+
+        const other = document.querySelector("#helpfulBtn");
+
+        if (other) {
+            other.classList.add("kb-vote-not-selected");
+        }
+    }
+
+});
+
+(function () {
+
+    const path = window.location.pathname;
+
+    /*
+       DEMO environment mapping:
+
+       /facilitiesdemo/          = Internal prototype
+       /facilitiesdemo/internal/ = Public prototype
+    */
+
+    const isPublicPrototype =
+        /^\/facilitiesdemo\/internal(?:\/|$)/i.test(path);
+
+    if (!isPublicPrototype) return;
+
+    document.documentElement.classList.add(
+        "kb-public-prototype"
+    );
+
+    /*
+       Make shared resource links use
+       the current DEMO environment.
+    */
+
+    document.querySelectorAll(
+        ".kb-button-grid a[href]"
+    ).forEach(function (link) {
+
+        const url = new URL(link.href, window.location.origin);
+
+        if (url.origin !== window.location.origin) return;
+
+        if (url.pathname.startsWith("/facilitiesdemo/") &&
+            !url.pathname.startsWith("/facilitiesdemo/internal/")) {
+
+            url.pathname = url.pathname.replace(
+                "/facilitiesdemo/",
+                "/facilitiesdemo/internal/"
+            );
+
+            link.href = url.pathname + url.search + url.hash;
+        }
+
+    });
+
+})();
