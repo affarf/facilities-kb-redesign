@@ -2656,31 +2656,26 @@ footer {
 }
 
 /* =========================================
-   MOBILE SEARCH PAGINATION
+   MOBILE PAGINATION — IMPROVED SPACING
    ========================================= */
 
 @media screen and (max-width: 600px) {
 
     #mobile-container nav[aria-label="Pagination"] {
-        display: flex !important;
-        justify-content: center !important;
-
         width: 100% !important;
-        margin: 22px 0 !important;
+        margin: 20px 0 !important;
         padding: 0 !important;
     }
 
     #mobile-container ul.kbt-paging {
         display: flex !important;
-        flex-wrap: wrap !important;
+        flex-wrap: nowrap !important;
         align-items: center !important;
         justify-content: center !important;
 
-        gap: 6px !important;
+        gap: 5px !important;
 
-        width: auto !important;
-        max-width: 100% !important;
-
+        width: 100% !important;
         margin: 0 !important;
         padding: 0 !important;
 
@@ -2689,17 +2684,13 @@ footer {
 
     #mobile-container ul.kbt-paging > li {
         display: flex !important;
-        align-items: center !important;
-        justify-content: center !important;
+        flex: 0 1 auto !important;
+        min-width: 0 !important;
 
         margin: 0 !important;
         padding: 0 !important;
 
         list-style: none !important;
-    }
-
-    #mobile-container ul.kbt-paging > li::marker {
-        content: "" !important;
     }
 
     #mobile-container ul.kbt-paging > li > a,
@@ -2708,24 +2699,26 @@ footer {
         align-items: center !important;
         justify-content: center !important;
 
-        min-width: 40px !important;
+        min-width: 32px !important;
         min-height: 40px !important;
 
-        padding: 8px 12px !important;
+        padding: 8px 10px !important;
 
         background: #ffffff !important;
         border: 1px solid #dddddd !important;
         border-radius: 5px !important;
 
         color: #282728 !important;
-        font-size: 14px !important;
+        font-size: 13px !important;
         font-weight: 600 !important;
+        white-space: nowrap !important;
 
         text-decoration: none !important;
+        box-sizing: border-box !important;
     }
 
     #mobile-container ul.kbt-paging > li > a:hover {
-        background: #fef2f2 !important;
+        background: #fff5f5 !important;
         border-color: #c5050c !important;
         color: #9b0000 !important;
     }
@@ -2735,7 +2728,6 @@ footer {
         outline-offset: 2px !important;
     }
 
-    /* Current page, when KB marks it as active */
     #mobile-container ul.kbt-paging > li.active > a,
     #mobile-container ul.kbt-paging > li.active > span,
     #mobile-container ul.kbt-paging > li[aria-current="page"] > a,
@@ -2744,4 +2736,34 @@ footer {
         border-color: #c5050c !important;
         color: #ffffff !important;
     }
+
+    /* Slightly smaller buttons on narrow phones */
+    @media (max-width: 360px) {
+        #mobile-container ul.kbt-paging {
+            gap: 3px !important;
+        }
+
+        #mobile-container ul.kbt-paging > li > a,
+        #mobile-container ul.kbt-paging > li > span {
+            min-width: 29px !important;
+            padding: 7px 6px !important;
+            font-size: 12px !important;
+        }
+    }
+}
+/* =========================================
+   SCREEN READER ONLY STATUS
+   ========================================= */
+
+.kbs-sr-only {
+    position: absolute !important;
+    width: 1px !important;
+    height: 1px !important;
+    padding: 0 !important;
+    margin: -1px !important;
+    overflow: hidden !important;
+    clip: rect(0, 0, 0, 0) !important;
+    clip-path: inset(50%) !important;
+    white-space: nowrap !important;
+    border: 0 !important;
 }
