@@ -2654,3 +2654,94 @@ footer {
     }
 }
 }
+
+/* =========================================
+   MOBILE SEARCH PAGINATION
+   ========================================= */
+
+@media screen and (max-width: 600px) {
+
+    #mobile-container nav[aria-label="Pagination"] {
+        display: flex !important;
+        justify-content: center !important;
+
+        width: 100% !important;
+        margin: 22px 0 !important;
+        padding: 0 !important;
+    }
+
+    #mobile-container ul.kbt-paging {
+        display: flex !important;
+        flex-wrap: wrap !important;
+        align-items: center !important;
+        justify-content: center !important;
+
+        gap: 6px !important;
+
+        width: auto !important;
+        max-width: 100% !important;
+
+        margin: 0 !important;
+        padding: 0 !important;
+
+        list-style: none !important;
+    }
+
+    #mobile-container ul.kbt-paging > li {
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+
+        margin: 0 !important;
+        padding: 0 !important;
+
+        list-style: none !important;
+    }
+
+    #mobile-container ul.kbt-paging > li::marker {
+        content: "" !important;
+    }
+
+    #mobile-container ul.kbt-paging > li > a,
+    #mobile-container ul.kbt-paging > li > span {
+        display: inline-flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+
+        min-width: 40px !important;
+        min-height: 40px !important;
+
+        padding: 8px 12px !important;
+
+        background: #ffffff !important;
+        border: 1px solid #dddddd !important;
+        border-radius: 5px !important;
+
+        color: #282728 !important;
+        font-size: 14px !important;
+        font-weight: 600 !important;
+
+        text-decoration: none !important;
+    }
+
+    #mobile-container ul.kbt-paging > li > a:hover {
+        background: #fef2f2 !important;
+        border-color: #c5050c !important;
+        color: #9b0000 !important;
+    }
+
+    #mobile-container ul.kbt-paging > li > a:focus-visible {
+        outline: 3px solid #0479a8 !important;
+        outline-offset: 2px !important;
+    }
+
+    /* Current page, when KB marks it as active */
+    #mobile-container ul.kbt-paging > li.active > a,
+    #mobile-container ul.kbt-paging > li.active > span,
+    #mobile-container ul.kbt-paging > li[aria-current="page"] > a,
+    #mobile-container ul.kbt-paging > li[aria-current="page"] > span {
+        background: #c5050c !important;
+        border-color: #c5050c !important;
+        color: #ffffff !important;
+    }
+}
