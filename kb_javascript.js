@@ -275,51 +275,70 @@ document.addEventListener("click", function (event) {
 
 });
 
+
+/* =========================================
+   FACILITIES KB — DEMO SITE DETECTION
+   ========================================= */
+
 (function () {
-
-    const path = window.location.pathname;
-
-    /*
-       DEMO environment mapping:
-
-       /facilitiesdemo/          = Internal prototype
-       /facilitiesdemo/internal/ = Public prototype
-    */
+    "use strict";
 
     const isPublicPrototype =
-        /^\/facilitiesdemo\/internal(?:\/|$)/i.test(path);
+        /^\/facilitiesdemo\/internal(?:\/|$)/i.test(
+            window.location.pathname
+        );
 
-    if (!isPublicPrototype) return;
+    // Apply the class used by the shared homepage CSS.
+    if (isPublicPrototype) {
+        document.documentElement.classList.add(
+            "kb-public-prototype"
+        );
+    }
 
-    document.documentElement.classList.add(
-        "kb-public-prototype"
-    );
+    // Update shared links after the homepage loads.
+    function updateResourceLinks() {
 
-    /*
-       Make shared resource links use
-       the current DEMO environment.
-    */
+        if (!isPublicPrototype) return;
 
-    document.querySelectorAll(
-        ".kb-button-grid a[href]"
-    ).forEach(function (link) {
+        const links = document.querySelectorAll(
+            ".kb-button-grid a.kb-public-resource[href]"
+        );
 
-        const url = new URL(link.href, window.location.origin);
+        links.forEach(function (link) {
 
-        if (url.origin !== window.location.origin) return;
-
-        if (url.pathname.startsWith("/facilitiesdemo/") &&
-            !url.pathname.startsWith("/facilitiesdemo/internal/")) {
-
-            url.pathname = url.pathname.replace(
-                "/facilitiesdemo/",
-                "/facilitiesdemo/internal/"
+            const url = new URL(
+                link.href,
+                window.location.origin
             );
 
-            link.href = url.pathname + url.search + url.hash;
-        }
+            if (url.origin !== window.location.origin) {
+                return;
+            }
 
-    });
+            // Convert shared Safety link to the public prototype.
+            if (
+                url.pathname.startsWith("/facilitiesdemo/") &&
+                !url.pathname.startsWith("/facilitiesdemo/internal/")
+            ) {
+                url.pathname = url.pathname.replace(
+                    "/facilitiesdemo/",
+                    "/facilitiesdemo/internal/"
+                );
+
+                link.href =
+                    url.pathname + url.search + url.hash;
+            }
+        });
+    }
+
+    if (document.readyState === "loading") {
+        document.addEventListener(
+            "DOMContentLoaded",
+            updateResourceLinks
+        );
+    } else {
+        updateResourceLinks();
+    }
 
 })();
 
