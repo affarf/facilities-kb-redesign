@@ -1,0 +1,280 @@
+<style>
+ /* Refining Views — same visual system as FP&M LOTO guide */
+  .csi-guide{max-width:900px;margin:20px 0;color:inherit;line-height:1.6}
+  .csi-scope{background:#fdf2f2;border-left:5px solid #c5050c;padding:16px 18px;margin-bottom:20px;border-radius:0 5px 5px 0}
+  .csi-scope p{margin:0}
+  .csi-quick-links{background:#f7f7f7;border:1px solid #e0e0e0;padding:18px;margin-bottom:24px;border-radius:5px}
+  .csi-quick-title{font-size:18px;font-weight:700;margin-bottom:6px}
+  .csi-quick-links p{margin:0 0 14px}
+  .csi-button-group{display:flex;flex-wrap:wrap;gap:10px}
+  .csi-button{display:inline-block;padding:10px 16px;background:#c5050c;color:#fff!important;text-decoration:none!important;font-weight:700;border-radius:4px;line-height:1.4}
+  .csi-button:hover,.csi-button:focus{background:#9b0000;color:#fff!important}
+  .csi-button-secondary{background:#444}.csi-button-secondary:hover,.csi-button-secondary:focus{background:#222}
+  .csi-accordion{margin-bottom:12px;border:1px solid #ddd;border-left:5px solid #c5050c;border-radius:5px;background:#fff;overflow:hidden}
+  .csi-accordion summary{display:flex;align-items:center;justify-content:space-between;gap:15px;padding:16px 18px;cursor:pointer;font-size:18px;font-weight:700;color:#222;background:#f9f9f9;list-style:none}
+  .csi-accordion summary:hover,.csi-accordion summary:focus{background:#f1f1f1}
+  .csi-accordion summary::-webkit-details-marker{display:none}
+  .csi-accordion summary::after{content:'+';flex-shrink:0;color:#c5050c;font-size:25px;font-weight:700;line-height:1}
+  .csi-accordion[open] summary::after{content:'−'}
+  .csi-accordion[open] summary{background:#f7f7f7;border-bottom:2px solid #c5050c}
+  .csi-content{padding:18px 20px}
+  .csi-content p{margin:0 0 14px}
+  .csi-content h3{margin:20px 0 8px;font-size:18px}.csi-content h3:first-child{margin-top:0}
+  .csi-content ul,.csi-content ol{padding-left:24px;margin:8px 0 16px}.csi-content li{margin-bottom:8px}
+  .csi-content img{max-width:100%;width:auto;height:auto;vertical-align:middle;margin:8px 10px 8px 0;border:1px solid #ddd;border-radius:4px;box-sizing:border-box}
+  .csi-content a{overflow-wrap:anywhere}
+  .csi-step{border-left:4px solid #c5050c;background:#f7f7f7;padding:14px 16px;margin-bottom:14px;border-radius:0 5px 5px 0}
+  .csi-step-title{font-size:17px;font-weight:700;margin-bottom:8px}
+
+  .csi-button:focus-visible,.csi-accordion summary:focus-visible{outline:3px solid #0479a8;outline-offset:2px}
+  @media(max-width:650px){.csi-guide{margin:12px 0;font-size:17px;line-height:1.65}.csi-scope,.csi-quick-links{padding:16px}.csi-button-group{display:block}.csi-button{display:block;width:100%;box-sizing:border-box;text-align:center;padding:13px 15px;margin-bottom:10px;font-size:16px}.csi-accordion summary{padding:17px 16px;font-size:18px}.csi-content{padding:18px 16px;font-size:17px}.csi-content img{display:block;margin:10px auto;max-width:100%}.csi-content ul,.csi-content ol{padding-left:22px}}
+</style>
+<div class="csi-guide">
+ <div class="csi-scope">
+  <p>
+   <strong>
+    Overview:
+   </strong>
+   There are two primary ways to refine information in a CSI View: search bars and filters. This lesson addresses both.
+  </p>
+ </div>
+ <div class="csi-quick-links">
+  <div class="csi-quick-title">
+   CSI Lesson Links
+  </div>
+  <p>
+   Return to the CSI lesson list.
+  </p>
+  <div class="csi-button-group">
+   <a class="csi-button" href="https://kb.wisc.edu/fpm/using-csi">
+    Back to CSI Lesson List
+   </a>
+  </div>
+ </div>
+ <details class="csi-accordion">
+  <summary>
+   Search Bars
+  </summary>
+  <div class="csi-content">
+   <p>
+    Throughout all pages of CSI, you will notice multiple search bars, often on the same screen. It is important to know the difference between them to ensure you are using the correct one for each situation.
+   </p>
+   <h3>
+    Global Search
+   </h3>
+   <p>
+    The red outline below is the global search for the entire CSI site.
+   </p>
+   <ul>
+    <li>
+     Type your desired content in this box.
+    </li>
+    <li>
+     Click the search icon.
+    </li>
+    <li>
+     Results may be found in a field not shown in the displayed results.
+    </li>
+    <li>
+     Results will display for the following information:
+     <ul>
+      <li>
+       Rooms
+      </li>
+      <li>
+       Employees
+      </li>
+      <li>
+       Others TBD
+      </li>
+     </ul>
+    </li>
+   </ul>
+   <h3>
+    View Search
+   </h3>
+   <p>
+    The yellow outline below is the search for any specific View.
+   </p>
+   <ul>
+    <li>
+     Type your desired content in this box.
+    </li>
+    <li>
+     Click the search icon.
+    </li>
+    <li>
+     Results are limited to the view on the screen.
+    </li>
+    <li>
+     Results may be found in a field not shown in the displayed results.
+    </li>
+   </ul>
+   <p>
+    <img alt="CSI global search outlined in red and View Search outlined in yellow" height="250" loading="lazy" src="/images/group262/165540/b64_20250326122155-0.png" width="910"/>
+   </p>
+  </div>
+ </details>
+ <details class="csi-accordion">
+  <summary>
+   Filters
+  </summary>
+  <div class="csi-content">
+   <p>
+    Filters allow you to narrow information further than the search bar by setting criteria on multiple different fields.
+   </p>
+   <h3>
+    Applying Filters
+   </h3>
+   <p>
+    Use the following steps to apply filters:
+   </p>
+   <ol>
+    <li>
+     Click the Filter icon in the upper right of the view, outlined in red below. This opens filter options for each field in the view.
+    </li>
+    <li>
+     Enter text in the text box for the field you want to filter.
+    </li>
+    <li>
+     Click the filter icon next to the field being filtered.
+    </li>
+    <li>
+     Select the desired filter action from the dropdown options.
+    </li>
+    <li>
+     Results will be displayed.
+    </li>
+    <li>
+     Multiple fields may be filtered.
+     <ul>
+      <li>
+       Finish filtering one field before moving to the next.
+      </li>
+      <li>
+       There is no limit to the number of filters that can be applied.
+      </li>
+     </ul>
+    </li>
+   </ol>
+   <p>
+    <img alt="Space Management filter toolbar" height="90" loading="lazy" src="/images/group262/165540/b64_20250326122155-1.png" width="912"/>
+   </p>
+   <p>
+    <img alt="CSI filter options" height="368" loading="lazy" src="/images/group262/165540/b64_20250326122155-2.png" width="552"/>
+   </p>
+   <p>
+    <img alt="CSI filtering example" height="159" loading="lazy" src="/images/group262/165540/b64_20250326122155-3.png" width="908"/>
+   </p>
+   <h3>
+    Removing Filters
+   </h3>
+   <div class="csi-step">
+    <div class="csi-step-title">
+     Remove an individual filter
+    </div>
+    <ul>
+     <li>
+      Click the filter icon next to the desired field.
+     </li>
+     <li>
+      Select “NoFilter” from the dropdown list.
+     </li>
+     <li>
+      This filter is removed.
+     </li>
+     <li>
+      Repeat for each field where a filter has been applied.
+     </li>
+    </ul>
+   </div>
+   <div class="csi-step">
+    <div class="csi-step-title">
+     Remove all filters
+    </div>
+    <ul>
+     <li>
+      Click refresh on the web browser.
+     </li>
+     <li>
+      The exact icon appearance and location will vary with the browser being used.
+     </li>
+    </ul>
+   </div>
+  </div>
+ </details>
+ <details class="csi-accordion">
+  <summary>
+   Result Page Size
+  </summary>
+  <div class="csi-content">
+   <p>
+    You can adjust the number of results displayed on a page as shown below.
+   </p>
+   <ul>
+    <li>
+     <strong>
+      Default size
+     </strong>
+     – 20 rows of results is the default.
+    </li>
+    <li>
+     <strong>
+      Adjust size
+     </strong>
+     – Use the dropdown to select the desired number of rows.
+    </li>
+    <li>
+     <strong>
+      Limitation
+     </strong>
+     – Increasing the page size may increase loading time.
+    </li>
+   </ul>
+   <p>
+    <img alt="CSI result page size options" height="231" loading="lazy" src="/images/group262/165540/b64_20250326122155-4.png" width="482"/>
+   </p>
+  </div>
+ </details>
+ <details class="csi-accordion">
+  <summary>
+   Saved Queries
+  </summary>
+  <div class="csi-content">
+   <p>
+    <strong>
+     Saved queries
+    </strong>
+    are available on some views to provide easy access to common filtering.
+   </p>
+   <p>
+    Click the arrow shown below to get the dropdown options for saved queries.
+   </p>
+   <ul>
+    <li>
+     The list options are unique to the view.
+    </li>
+    <li>
+     The options are preset for the single field shown.
+    </li>
+    <li>
+     Additional filters can be applied to further limit results following the steps above.
+    </li>
+    <li>
+     To remove saved query filtering, select “Show All”.
+     <ul>
+      <li>
+       Any additional filters will remain.
+      </li>
+     </ul>
+    </li>
+    <li>
+     To remove all queries and filters, use the web page refresh button.
+    </li>
+   </ul>
+   <p>
+    <img alt="CSI saved queries dropdown" height="380" loading="lazy" src="/images/group262/165540/b64_20250326122155-5.png" width="442"/>
+   </p>
+  </div>
+ </details>
+</div>
