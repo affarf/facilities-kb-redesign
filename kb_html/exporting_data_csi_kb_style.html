@@ -1,0 +1,51 @@
+<style>
+.csi-guide{max-width:900px;margin:20px 0;color:inherit;line-height:1.6}
+.csi-guide .csi-scope{background:#fdf2f2;border-left:5px solid #c5050c;padding:16px 18px;margin-bottom:20px;border-radius:0 5px 5px 0}
+.csi-guide .csi-scope p{margin:0 0 10px}.csi-guide .csi-scope p:last-child{margin-bottom:0}
+.csi-guide .csi-quick-links{background:#f7f7f7;border:1px solid #e0e0e0;padding:18px;margin-bottom:24px;border-radius:5px}
+.csi-guide .csi-button{display:inline-block;background:#c5050c;color:#fff!important;text-decoration:none!important;font-weight:bold;padding:10px 16px;border-radius:4px}
+.csi-guide .csi-button:hover,.csi-guide .csi-button:focus{background:#9b0000}
+.csi-guide .csi-accordion{margin-bottom:12px;border:1px solid #ddd;border-left:5px solid #c5050c;border-radius:5px;background:#fff;overflow:hidden}
+.csi-guide .csi-accordion summary{display:flex;align-items:center;justify-content:space-between;gap:15px;padding:16px 18px;cursor:pointer;font-size:18px;font-weight:bold;color:#222;background:#f9f9f9;list-style:none}
+.csi-guide summary::-webkit-details-marker{display:none}
+.csi-guide summary::after{content:'+';color:#c5050c;font-size:25px;font-weight:bold;flex-shrink:0}
+.csi-guide details[open] summary::after{content:'−'}
+.csi-guide details[open] summary{background:#f7f7f7;border-bottom:2px solid #c5050c}
+.csi-guide summary:hover,.csi-guide summary:focus{background:#f1f1f1}
+.csi-guide summary:focus-visible,.csi-guide a:focus-visible{outline:2px solid #222;outline-offset:-3px}
+.csi-guide .csi-content{padding:18px 20px}.csi-guide .csi-content p:first-child{margin-top:0}.csi-guide .csi-content p:last-child{margin-bottom:0}
+.csi-guide ul{padding-left:24px;margin:8px 0 16px}.csi-guide li{margin-bottom:8px}
+.csi-guide .csi-warning{background:#fdf2f2;border-left:4px solid #c5050c;padding:13px 15px;margin:15px 0 0;border-radius:0 4px 4px 0}
+@media(max-width:650px){.csi-guide{margin:12px 0;font-size:17px;line-height:1.65}.csi-guide .csi-scope,.csi-guide .csi-quick-links{padding:16px}.csi-guide .csi-button{display:block;text-align:center;padding:13px 15px}.csi-guide .csi-accordion summary{padding:17px 16px;line-height:1.4}.csi-guide .csi-content{padding:18px 16px}.csi-guide ul{padding-left:22px}.csi-guide li{margin-bottom:10px}}
+</style>
+<div class="csi-guide">
+  <div class="csi-scope">
+    <p>There are user-based reasons for using facility or room details outside of the CSI environment. This may be as simple as printing a report or exporting a table of results to manipulate data offline.</p>
+    <p>There are two types of exporting in CSI software: <strong>Reports</strong> and <strong>Floor Plans</strong>.</p>
+  </div>
+  <div class="csi-quick-links"><a class="csi-button" href="https://kb.wisc.edu/fpm/149346">Back to CSI Lesson List</a></div>
+  <details class="csi-accordion">
+    <summary>From Reports</summary>
+    <div class="csi-content">
+      <p>Reports are the only way to export tabular data from CSI. Report exports can be printed or used to work with tabular data offline.</p>
+      <ul><li><strong>To prepare &amp; export data</strong> – See the <a href="https://kb.wisc.edu/fpm/customizing-reports">Customizing Reports</a> lesson for detailed help to prepare and export space data.</li></ul>
+    </div>
+  </details>
+  <details class="csi-accordion">
+    <summary>From Floor Plans</summary>
+    <div class="csi-content">
+      <p>Floor plans can be very helpful to download for many uses.</p>
+      <ul>
+        <li><strong>To prepare</strong> – See the <a href="https://kb.wisc.edu/fpm/viewing-a-floor-plan">Viewing a Floor Plan</a> lesson to select the desired floor plan and details for downloading.</li>
+        <li><strong>To export</strong> – See the <a href="https://kb.wisc.edu/fpm/printing-a-floor-plan">Printing a Floor Plan</a> lesson to optimize PDF exports.</li>
+      </ul>
+    </div>
+  </details>
+  <details class="csi-accordion">
+    <summary>User Responsibilities</summary>
+    <div class="csi-content">
+      <p>Reports are exported with a report name, date, and disclaimer information. For more details, see the <a href="https://kb.wisc.edu/fpm/access-to-csi">Access to CSI</a> lesson.</p>
+      <div class="csi-warning"><strong>Important:</strong> Be mindful of storing and sharing any floor plans with sensitive areas.</div>
+    </div>
+  </details>
+</div>
