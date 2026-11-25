@@ -1,0 +1,134 @@
+<style>
+  /* Finding a Room — same visual system as FP&M LOTO guide */
+  .csi-guide{max-width:900px;margin:20px 0;color:inherit;line-height:1.6}
+  .csi-scope{background:#fdf2f2;border-left:5px solid #c5050c;padding:16px 18px;margin-bottom:20px;border-radius:0 5px 5px 0}
+  .csi-scope p{margin:0}
+  .csi-quick-links{background:#f7f7f7;border:1px solid #e0e0e0;padding:18px;margin-bottom:24px;border-radius:5px}
+  .csi-quick-title{font-size:18px;font-weight:700;margin-bottom:6px}
+  .csi-quick-links p{margin:0 0 14px}
+  .csi-button-group{display:flex;flex-wrap:wrap;gap:10px}
+  .csi-button{display:inline-block;padding:10px 16px;background:#c5050c;color:#fff!important;text-decoration:none!important;font-weight:700;border-radius:4px;line-height:1.4}
+  .csi-button:hover,.csi-button:focus{background:#9b0000;color:#fff!important}
+  .csi-button-secondary{background:#444}.csi-button-secondary:hover,.csi-button-secondary:focus{background:#222}
+  .csi-accordion{margin-bottom:12px;border:1px solid #ddd;border-left:5px solid #c5050c;border-radius:5px;background:#fff;overflow:hidden}
+  .csi-accordion summary{display:flex;align-items:center;justify-content:space-between;gap:15px;padding:16px 18px;cursor:pointer;font-size:18px;font-weight:700;color:#222;background:#f9f9f9;list-style:none}
+  .csi-accordion summary:hover,.csi-accordion summary:focus{background:#f1f1f1}
+  .csi-accordion summary::-webkit-details-marker{display:none}
+  .csi-accordion summary::after{content:'+';flex-shrink:0;color:#c5050c;font-size:25px;font-weight:700;line-height:1}
+  .csi-accordion[open] summary::after{content:'−'}
+  .csi-accordion[open] summary{background:#f7f7f7;border-bottom:2px solid #c5050c}
+  .csi-content{padding:18px 20px}
+  .csi-content p{margin:0 0 14px}
+  .csi-content h3{margin:20px 0 8px;font-size:18px}.csi-content h3:first-child{margin-top:0}
+  .csi-content ul,.csi-content ol{padding-left:24px;margin:8px 0 16px}.csi-content li{margin-bottom:8px}
+  .csi-content img{max-width:100%;width:auto;height:auto;vertical-align:middle;margin:8px 10px 8px 0;border:1px solid #ddd;border-radius:4px;box-sizing:border-box}
+  .csi-content a{overflow-wrap:anywhere}
+  .csi-step{border-left:4px solid #c5050c;background:#f7f7f7;padding:14px 16px;margin-bottom:14px;border-radius:0 5px 5px 0}
+  .csi-step-title{font-size:17px;font-weight:700;margin-bottom:8px}
+
+  .csi-button:focus-visible,.csi-accordion summary:focus-visible{outline:3px solid #0479a8;outline-offset:2px}
+  @media(max-width:650px){.csi-guide{margin:12px 0;font-size:17px;line-height:1.65}.csi-scope,.csi-quick-links{padding:16px}.csi-button-group{display:block}.csi-button{display:block;width:100%;box-sizing:border-box;text-align:center;padding:13px 15px;margin-bottom:10px;font-size:16px}.csi-accordion summary{padding:17px 16px;font-size:18px}.csi-content{padding:18px 16px;font-size:17px}.csi-content img{display:block;margin:10px auto;max-width:100%}.csi-content ul,.csi-content ol{padding-left:22px}}
+</style><div class="csi-guide"><div class="csi-scope"><p>Floor plans can be very helpful to download for many uses. Using Graphic Views can display different data elements that can further help visualize space on each floor.</p><p>Users can now access the most current floor plans by using CSI. SMO Plan PDFs will no longer be available. Contact <a href="mailto:smo@fpm.wisc.edu">smo@fpm.wisc.edu</a> for any unique floor plan needs.</p></div><div class="csi-quick-links"><div class="csi-quick-title">CSI Lesson Links</div><div class="csi-button-group"><a class="csi-button" href="https://kb.wisc.edu/fpm/using-csi">Back to CSI Lesson List</a><a class="csi-button csi-button-secondary" href="https://kb.wisc.edu/fpm/viewing-a-floor-plan">Viewing a Floor Plan</a></div></div><details class="csi-accordion"><summary>How to Prepare</summary><div class="csi-content"><p>See the <a href="https://kb.wisc.edu/fpm/viewing-a-floor-plan">Viewing a Floor Plan</a> lesson to select the desired floor plan details for downloading.</p><h3>Plan Location Choices</h3><p>Floor plans can be accessed from two different CSI options within the Space Management Module: Sites (or Floor Plans) or Views. See <a href="https://kb.wisc.edu/fpm/general-navigation">General Navigation</a> for more details.</p><p><strong>Sites (or Floor Plans)</strong> – Opening a floor plan from Sites (left navigation bar) or Floor Plans (from home page), includes both Exporting PDF and Print options in the Actions dropdown menu.</p><p><img alt="Screenshot of the CSI dropdown of Actions available when opening a floor plan from Views." height="122" loading="lazy" src="/images/group198/149727/b64_20251126034608-0.png" width="154"/></p><p><strong>View</strong> – Opening a floor plan while interacting with a view will only provide the Print option from the Actions dropdown menu.</p><p><img alt="Screenshot of the CSI dropdown of Actions available when opening a floor plan from Views." height="105" loading="lazy" src="/images/group198/149727/b64_20251126034608-1.png" width="132"/></p></div></details><details class="csi-accordion"><summary>How to Print or Export</summary><div class="csi-content"><p>It is possible to print or export to PDFs and both options are available with any Graphic View.</p><p>The differences are based on how CSI interacts with Adobe PDF printer options. Because printing and exporting vary with a user’s browser, printer and Adobe settings, the user may see some variation from the training materials.</p><h3>To Print or Export</h3><p><strong>Printing</strong> features in CSI include:</p><ul>
+<li>Quick and easy for the selected single floor</li>
+<li>Can print a zoomed area or full floor</li>
+<li>Can use any printer (including copier, fax, Windows writer, PDF, etc) available on a user’s computer</li>
+<li>Being an available option for floor plans opened from both Sites (or Floor Plans) or Views</li>
+</ul><p><strong>Exporting</strong> features in CSI include:</p><ul>
+<li>Creating PDF formatted documents</li>
+<li>Provides options to include a name, header, footer, and date</li>
+<li>Can print multiple floors in a single export</li>
+<li>Being an available option only for plans opened through the Sites (or Floor Plans) links</li>
+</ul></div></details><details class="csi-accordion"><summary>Printing a Plan</summary><div class="csi-content"><p>Using the <strong>Print</strong> function is a convenient way to generate a single floor plan from any printer available on the user’s computer.</p><ul>
+<li>Start by selecting the floor plan and graphic view desired</li>
+<li>Use the dropdown menu in the Actions button to select Print (or Shift + P)</li>
+</ul><p><img alt="Screenshot of a CSI floor plan highlighting selection locations selecting a specific floor plan, the desired Graphic View, and using the Print Action." height="309" loading="lazy" src="/images/group198/149727/b64_20251126034608-2.png" width="495"/></p><ul>
+<li>Select the     button for the floor plan area to print
+<ul>
+<li>The current viewable area button can be used to zoom in and capture a specific area of the floor plan.</li>
+<li>The entire floor plan button is used   to print the whole floor, including the titleblock across the bottom with the building name, number, floor, and date it was last uploaded to CSI.</li>
+</ul>
+</li>
+</ul><p><img alt="Screenshot of a CSI floor plan pop-up to select plan area to print." height="149" loading="lazy" src="/images/group198/149727/b64_20251126034608-3.png" width="200"/></p><ul>
+<li>The printer menu pops up with several options
+<ul>
+<li><strong>Printer</strong> – Choose the appropriate printer from the available options in the drop-down list.</li>
+<li><strong>Pages</strong> – All or 1 are both appropriate for a single floor plan</li>
+<li><strong>Layout</strong> – Landscape will typically work best</li>
+<li><strong>More settings</strong> – Expands to show other printer options available to the user’s computer</li>
+<li><strong>Headers and footers</strong> – Adds the print date, file name and page number</li>
+</ul>
+</li>
+</ul><p><img alt="A sample of floor plan PDF printing pop-up with helpful settings." height="144" loading="lazy" src="/images/group198/149727/b64_20251126034608-4.png" width="359"/>   <img alt="Continuation of a sample of floor plan PDF printing pop-up with helpful settings." height="190" loading="lazy" src="/images/group198/149727/b64_20251126034608-5.png" width="146"/></p></div></details><details class="csi-accordion"><summary>Exporting a Plan(s)</summary><div class="csi-content"><p>Exporting floor plans as PDFs offers customizable layout options and the ability to export multiple plans simultaneously. Note: Export functions are only available when floor plans are accessed through links in Sites or Floor Plan Graphic Views.</p><ul>
+<li>Start by selecting the <strong>graphic view</strong> desired shown above.
+<ul>
+<li>Floor plan selection can happen here or during the export</li>
+</ul>
+</li>
+<li>Use the dropdown menu in the <strong>Actions</strong> button to select <strong>Export as PDF </strong>(or Shift + E)</li>
+<li>The <strong>Export as PDF</strong> menu includes several export details.
+<ul>
+<li><strong>*Name</strong> – This is a required field where the user can enter a name</li>
+<li><strong>Document header</strong> – A custom header can be created here</li>
+<li><strong>Document footer</strong> – A custom footer can be created here</li>
+<li><strong>Include Default Header</strong> – Automatically adds facility and floor details</li>
+<li><strong>Pagination</strong> – Automatically add page numbers</li>
+<li><strong>Date and Time</strong> – Adds the date and time the export was created</li>
+<li><strong>Graphic View</strong> – The selected Graphic View will be displayed here. It needs to be selected from the floor plan page and cannot be changed here</li>
+<li><strong>*Floors</strong> – This is another required field.
+<ul>
+<li>The current floor will be included automatically</li>
+<li>Use the Select Floors button to include additional floors from a navigation tree with facility number (name) and floor number.
+<ul>
+<li>The entire facility can be selected by checking the box at the facility level</li>
+<li>Individual floors can be selected or deselected by expanding the facility and checking or unchecking the desired floors.</li>
+<li>Use the up and down arrows on the right of the listed floor plans if a particular order is desired in the final PDF</li>
+<li>NOTE: The more floors selected, the bigger the file, the longer it will take to complete.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul><ul>
+<li><strong>Separate files by</strong> – The user can decide how many PDF files should be created.
+<ul>
+<li>None – All selected floors will be in a single file</li>
+<li>Site – All selected floors from the same Site (Main, Proximate, or Outlying) will be in separate files</li>
+<li>Building – Selected floors with each building will be exported into a file for the building</li>
+<li>Floor – This allows the user to create a separate file for each floor</li>
+</ul>
+</li><li><strong>Page size</strong> – Select desired paper size and orientation
+<ul>
+<li>Only paper sizes available on a user’s computer will be on the dropdown list</li>
+<li>Landscape is the recommended orientation for plans</li>
+</ul>
+</li><li><strong>Margin size</strong> – The options are small, medium, and large. Individual printer details may vary</li><li><strong>Font size</strong> – This field only adjusts the font size for the title, headers, footers, and page numbers. It does not change the size of the text within the floor plan</li>
+</ul><p><img alt="A sample of floor plan PDF exporting pop-up with helpful settings." height="438" loading="lazy" src="/images/group198/149727/b64_20251126034608-6.png" width="278"/> </p><ul>
+<li>Exporting the document with the selections shown above will provide the following results.
+<ul>
+<li><strong>*Name</strong> – Names the PDF file</li>
+<li><strong>Document header</strong> – User text is in upper left corner</li>
+<li><strong>Document footer</strong> – User text in in lower left corner</li>
+<li><strong>Default header</strong> – Lists Site. Facility #, Floor, Graphic View in upper left corner (Main, 0020 01, SMO Plan Print in this example)</li>
+<li><strong>Pagination</strong> – Shows Page # of Total pages (Page 1 of 1 in this example)</li>
+<li><strong>Date and time</strong> – The time stamp is located in the bottom center of the page</li>
+</ul>
+</li>
+</ul><p><img alt="Sample of an exported floor plan PDF highlighting selected elements." height="397" loading="lazy" src="/images/group198/149727/b64_20251126034608-7.png" width="510"/></p></div></details><details class="csi-accordion"><summary>Helpful Tips</summary><div class="csi-content"><p>Printing and exporting can vary by every user, printer, and Adobe preference. There are a few things that may optimize the final exported plan.</p><ul>
+<li>If the text is blurry or pixilated :
+<ul>
+<li>Try increasing the resolution in that printer’s setting</li>
+</ul>
+</li>
+<li>If there is extra white space around the plan :
+<ul>
+<li>Try selecting the floor directly from the <strong>Select Floors</strong> button on the <strong>Export</strong> option</li>
+<li>Try maximizing the floor plan on the web page using the zoom window in CSI and/or minimizing the web browser, then scaling it to best fit the floor before using the <strong>Print</strong> option to <strong>print current viewable area</strong></li>
+</ul>
+</li>
+<li>Additional tips will be posted as additional issues arise.</li>
+</ul></div></details><details class="csi-accordion"><summary>User Responsibilities</summary><div class="csi-content"><p>Reports are exported with a report name, date, and disclaimer information. For more details, see the <a href="https://kb.wisc.edu/fpm/access-to-csi">Access to CSI</a> lesson.</p><p>Be especially mindful of storing and sharing floor plans of very sensitive facilities as defined in policy <a href="https://policy.wisc.edu/library/UW-6060" rel="noopener" target="_blank">UW-6060 Distribution of Facility Data, Documents, and Graphics Information</a>. Examples of these facilities include:</p><ul>
+<li><strong>Animal holding </strong>– vivarium and barns</li>
+<li><strong>Public gathering </strong>– stadiums and arenas</li>
+<li><strong>Housing</strong> – dorms and apartments</li>
+</ul></div></details></div>
