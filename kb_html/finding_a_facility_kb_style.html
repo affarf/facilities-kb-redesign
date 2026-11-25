@@ -1,0 +1,97 @@
+<style>
+  /* Finding a Facility — same visual system as FP&M LOTO guide */
+  .csi-guide{max-width:900px;margin:20px 0;color:inherit;line-height:1.6}
+  .csi-scope{background:#fdf2f2;border-left:5px solid #c5050c;padding:16px 18px;margin-bottom:20px;border-radius:0 5px 5px 0}
+  .csi-scope p{margin:0}
+  .csi-quick-links{background:#f7f7f7;border:1px solid #e0e0e0;padding:18px;margin-bottom:24px;border-radius:5px}
+  .csi-quick-title{font-size:18px;font-weight:700;margin-bottom:6px}
+  .csi-quick-links p{margin:0 0 14px}
+  .csi-button-group{display:flex;flex-wrap:wrap;gap:10px}
+  .csi-button{display:inline-block;padding:10px 16px;background:#c5050c;color:#fff!important;text-decoration:none!important;font-weight:700;border-radius:4px;line-height:1.4}
+  .csi-button:hover,.csi-button:focus{background:#9b0000;color:#fff!important}
+  .csi-button-secondary{background:#444}.csi-button-secondary:hover,.csi-button-secondary:focus{background:#222}
+  .csi-accordion{margin-bottom:12px;border:1px solid #ddd;border-left:5px solid #c5050c;border-radius:5px;background:#fff;overflow:hidden}
+  .csi-accordion summary{display:flex;align-items:center;justify-content:space-between;gap:15px;padding:16px 18px;cursor:pointer;font-size:18px;font-weight:700;color:#222;background:#f9f9f9;list-style:none}
+  .csi-accordion summary:hover,.csi-accordion summary:focus{background:#f1f1f1}
+  .csi-accordion summary::-webkit-details-marker{display:none}
+  .csi-accordion summary::after{content:'+';flex-shrink:0;color:#c5050c;font-size:25px;font-weight:700;line-height:1}
+  .csi-accordion[open] summary::after{content:'−'}
+  .csi-accordion[open] summary{background:#f7f7f7;border-bottom:2px solid #c5050c}
+  .csi-content{padding:18px 20px}
+  .csi-content p{margin:0 0 14px}
+  .csi-content h3{margin:20px 0 8px;font-size:18px}.csi-content h3:first-child{margin-top:0}
+  .csi-content ul,.csi-content ol{padding-left:24px;margin:8px 0 16px}.csi-content li{margin-bottom:8px}
+  .csi-content img{max-width:100%;width:auto;height:auto;vertical-align:middle;margin:8px 10px 8px 0;border:1px solid #ddd;border-radius:4px;box-sizing:border-box}
+  .csi-content a{overflow-wrap:anywhere}
+  .csi-step{border-left:4px solid #c5050c;background:#f7f7f7;padding:14px 16px;margin-bottom:14px;border-radius:0 5px 5px 0}
+  .csi-step-title{font-size:17px;font-weight:700;margin-bottom:8px}
+
+  .csi-button:focus-visible,.csi-accordion summary:focus-visible{outline:3px solid #0479a8;outline-offset:2px}
+  @media(max-width:650px){.csi-guide{margin:12px 0;font-size:17px;line-height:1.65}.csi-scope,.csi-quick-links{padding:16px}.csi-button-group{display:block}.csi-button{display:block;width:100%;box-sizing:border-box;text-align:center;padding:13px 15px;margin-bottom:10px;font-size:16px}.csi-accordion summary{padding:17px 16px;font-size:18px}.csi-content{padding:18px 16px;font-size:17px}.csi-content img{display:block;margin:10px auto;max-width:100%}.csi-content ul,.csi-content ol{padding-left:22px}}
+</style><div class="csi-guide"><div class="csi-scope"><p>There are several ways to view a specific facility in CSI. Below are the two most common methods: Facilities via Filtered Views and Facilities via Reports.</p></div><div class="csi-quick-links"><div class="csi-quick-title">CSI Lesson Links</div><p>Return to the lesson list or review related CSI instructions.</p><div class="csi-button-group"><a class="csi-button" href="https://kb.wisc.edu/fpm/using-csi">Back to CSI Lesson List</a><a class="csi-button csi-button-secondary" href="https://kb.wisc.edu/fpm/refining-views">Refining Views</a></div></div><details class="csi-accordion"><summary>Facilities via Filtered View</summary><div class="csi-content"><p>One of the primary ways to view interactive facility details is through the 1.20 Facilities View, which consistently displays the facility details available within the system.</p><h3>Accessing Facilities via View 1.20</h3><p>From the Home Page:</p><ul>
+<li>Navigate to the Home Page</li>
+<li>Click on <strong>“1.20 Facilities”</strong> under the <strong>View</strong> header</li>
+</ul><p>From the Left Sidebar:</p><ul>
+<li>Select the <strong>Floor Plan Icon</strong></li>
+<li>Expand the <strong>View</strong> section</li>
+<li>Click on <strong>“1.20 Facilities”</strong></li>
+</ul><p><img alt="CSI interface screenshot illustrating the preceding instructions" height="229" loading="lazy" src="/images/group262/165543/b64_20251125034144-0.png" width="311"/>          <img alt="CSI interface screenshot illustrating the preceding instructions" height="226" loading="lazy" src="/images/group262/165543/b64_20251125034144-1.png" width="211"/></p><p><img alt="CSI interface screenshot illustrating the preceding instructions" height="103" loading="lazy" src="/images/group262/165543/b64_20251125034144-2.png" width="624"/></p><h3>Refining Options</h3><p>The 1.20 Facilities offers multiple ways to locate a specific facility based on various attributes, including <strong>Quick Search</strong>, <strong>Direct Filtering</strong>, and <strong>Field-Based Filtering</strong>.</p><ul>
+<li><strong>Quick Search</strong>
+<ul>
+<li>Use the View Search Box to search for results for all facility fields</li>
+<li>Confirm search results are displaying expected results</li>
+</ul>
+</li>
+</ul><p><img alt="CSI interface screenshot illustrating the preceding instructions" height="128" loading="lazy" src="/images/group262/165543/b64_20251125034144-3.png" width="333"/></p><ul>
+<li><strong>Direct Filtering</strong> (good for known facilities): <ul>
+<li>Select a Facility Number or Facility Name or Facility Legal Name</li>
+<li>NOTE: Use the ‘Contains’ field operator when only part of the name is known.</li>
+</ul>
+</li>
+</ul><p><img alt="CSI interface screenshot illustrating the preceding instructions" height="96" loading="lazy" src="/images/group262/165543/b64_20251125034144-4.png" width="583"/></p><ul>
+<li><strong>Field-Based Filtering</strong> (Flexible Criteria): <ul>
+<li>Filter on one or more fields available in the Facility View, such as: <ul>
+<li>Site</li>
+<li>Address</li>
+<li>Facility Type</li>
+<li>Ownership</li>
+<li>Program Use</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>See the <a href="https://kb.wisc.edu/fpm/refining-views">Refining Views</a> Lesson for enhanced options.</li>
+</ul><p><img alt="CSI interface screenshot illustrating the preceding instructions" height="142" loading="lazy" src="/images/group262/165543/b64_20251125034144-5.png" width="585"/></p><h3>Displaying Single Facility Details</h3><p>Selecting a facility from the result table (Example: Memorial Union in blue highlight) displays its details in the lower window in three areas:</p><ul>
+<li><strong>Top Details</strong> – Lists facility number, names, site, and address details</li>
+<li><strong>Facility Details</strong> – Lists facility characteristics, dates, funding, utility connections, conditions, and record details.  </li>
+<li><strong>Floors </strong>– Lists interactive links to each floor in a building <ul>
+<li>Clicking on a floor from this list opens that floor’s details</li>
+</ul>
+</li>
+</ul><p><img alt="CSI interface screenshot illustrating the preceding instructions" height="431" loading="lazy" src="/images/group262/165543/b64_20251125034144-6.png" width="412"/></p><p><img alt="CSI interface screenshot illustrating the preceding instructions" height="348" loading="lazy" src="/images/group262/165543/b64_20251125034144-7.png" width="240"/>             <img alt="CSI interface screenshot illustrating the preceding instructions" height="346" loading="lazy" src="/images/group262/165543/b64_20251125034144-8.png" width="272"/></p><ul>
+<li>From the Floor record, the View box icon opens that floor plan <ul>
+<li>See the <a href="https://kb.wisc.edu/fpm/viewing-a-floor-plan">Viewing a Floor Plan</a> lesson for more information</li>
+</ul>
+</li>
+<li>Open the Rooms tab to see a list of rooms on that floor <ul>
+<li>See the <a href="https://kb.wisc.edu/fpm/finding-a-room">Finding a Room</a> lesson for more information</li>
+</ul>
+</li>
+</ul><p><img alt="CSI interface screenshot illustrating the preceding instructions" height="249" loading="lazy" src="/images/group262/165543/b64_20251125034144-9.png" width="364"/></p></div></details><details class="csi-accordion"><summary>Facilities via Reports</summary><div class="csi-content"><p>Reports can be used to find multiple facilities or export facility data.</p><h3>Available Facility Reports</h3><p>There are two different facility reports initially available in the CSI software, outlined below.</p><ul>
+<li><strong>1.20 Basic Facility List</strong> – A report with basic information such as facility name, number, and address.</li>
+<li><strong>1.21 Facility Detail Report</strong> – A report containing a wide range of facility details often used by campus partners.</li>
+</ul><h3>Accessing Facilities via Reports</h3><p>From the Home Page:</p><ul>
+<li>Navigate to the <b>Home Page</b></li>
+<li>Clink on the desired facility report</li>
+</ul><p>From the Left Sidebar:</p><ul>
+<li>Open the <strong>Floor Plan</strong><strong> icon</strong> and expand the <strong>Report </strong>section.</li>
+<li>Click on the desired facility report</li>
+</ul><p>     <img alt="CSI interface screenshot illustrating the preceding instructions" height="194" loading="lazy" src="/images/group262/165543/b64_20251125034144-10.png" width="280"/>       <img alt="CSI interface screenshot illustrating the preceding instructions" height="201" loading="lazy" src="/images/group262/165543/b64_20251125034144-11.png" width="177"/></p><h3>Report results</h3><p>The report will open with the following results from the CSI at the time the report was created.</p><ul>
+<li>Name of report</li>
+<li>Date printed</li>
+<li>Disclaimer details</li>
+<li>Report results for all facilities</li>
+</ul><p>Sample of the Basic Facility List:</p><p><img alt="CSI interface screenshot illustrating the preceding instructions" height="240" loading="lazy" src="/images/group262/165543/b64_20251125034144-12.png" width="543"/></p><p>Sample of the Facility Detail Report:</p><p><img alt="CSI interface screenshot illustrating the preceding instructions" height="147" loading="lazy" src="/images/group262/165543/b64_20251125034144-13.png" width="534"/></p><h3>Customizing Reports</h3><p>Customizing reports can structure the results to match a business need.</p><ul>
+<li>Results can be customized by selecting columns, sorting, and/or filtering the results using the tools to the left of the report results</li>
+<li>See <a href="https://kb.wisc.edu/fpm/customizing-reports">Customizing Reports</a> to continue to customize the report for desired facilities</li>
+</ul></div></details></div>
